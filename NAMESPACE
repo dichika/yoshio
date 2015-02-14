@@ -2,4 +2,5 @@
 
 export(breathofgod)
 export(read.csvv)
+export(requiree)
 export(unlib)

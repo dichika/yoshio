@@ -39,3 +39,11 @@ breathofgod <- function(){
     Sys.sleep(1)
   }  
 }
+
+#' @export
+requiree <- function(emoji){
+  require("remoji")
+  res <- remoji:::dat_alias$alias[match(emoji, remoji:::dat_alias$emoji)]
+  require(res, character.only=TRUE)
+  message(paste0("Loading required package: ", emoji))
+}
